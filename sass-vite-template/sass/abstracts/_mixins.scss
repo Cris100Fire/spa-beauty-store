@@ -1,0 +1,16 @@
+@use "./variables.scss" as v;
+@use "sass:map";
+
+@mixin respond($size) {
+  @media (min-width: map.get(v.$breakpoints, $size)) {
+    @content;
+  }
+}
+
+@mixin reset-list() {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}

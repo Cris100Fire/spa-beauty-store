@@ -1,0 +1,29 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+.hero {
+  h1 {
+    font-size: v.$tittle-size-text;
+    margin-bottom: 32px;
+  }
+  p {
+    font-size: v.$secondary-size-text;
+    color: v.$secondary-text-color;
+    margin-bottom: 56px;
+  }
+  .hero-btns {
+    @include m.reset-list();
+    gap: 32px;
+    padding-bottom: 70px;
+    li:last-of-type {
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: 16px;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

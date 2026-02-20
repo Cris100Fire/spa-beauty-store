@@ -1,0 +1,28 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+.services {
+  background-color: white;
+  display: flex;
+  gap: 72px;
+  padding: 32px;
+  text-align: center;
+  border-radius: 16px;
+  width: 85%;
+  article {
+    img {
+      background-color: v.$bg_2-color;
+      padding: 8px;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+    h4 {
+      font-size: v.$third-size-text;
+      font-weight: 400;
+      margin: 24px 0 16px;
+    }
+    p {
+      color: v.$secondary-text-color;
+    }
+  }
+}

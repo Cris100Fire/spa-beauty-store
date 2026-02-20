@@ -1,0 +1,22 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: v.$primary-color;
+  display: inline-block;
+}
+
+img {
+  display: block;
+}

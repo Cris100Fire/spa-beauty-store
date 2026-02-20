@@ -1,0 +1,32 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 72px;
+  position: relative;
+  .header-login {
+    @include m.reset-list();
+    gap: 40px;
+    .options {
+      @include m.reset-list();
+      gap: 20px;
+      img {
+        width: 24px;
+      }
+    }
+    .login {
+      @include m.reset-list();
+      gap: 20px;
+      .link {
+        text-decoration: underline;
+        color: v.$primary-color;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
