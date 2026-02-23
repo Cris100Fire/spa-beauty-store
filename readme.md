@@ -71,6 +71,13 @@ During this project I strengthened and learned:
 
 ---
 
+## 📌 Responsiveness
+
+This landing page is currently optimized for desktop screens (~1536px width).  
+It was designed as a desktop-focused layout and is not intended for mobile devices at this stage.
+
+---
+
 ## 🚀 Future Improvements
 
 - Make the design fully responsive
